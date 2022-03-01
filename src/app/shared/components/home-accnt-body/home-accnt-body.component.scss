@@ -1,0 +1,75 @@
+ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 90px 1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  
+  .vehicle-card {
+    min-height: 150px;
+    --ion-grid-padding: 5px;
+  }
+  
+  .vehicle-container {
+    min-height: 150px;
+  }
+  
+  .vehicle-details {
+    margin-bottom: 10px;
+  }
+  
+  .vehicle-details-text {
+    height: 90%;
+  }
+  
+  .vehicle-details-fav {
+    height: 10%;
+  }
+  
+  .item-title {
+    // font-size: 12px;
+    font-weight: bold;
+    word-break: break-all;
+  }
+  
+  .item-description {
+    // font-size: 12px;
+    font-weight: normal;
+  }
+  
+  .item-price {
+    color: #ff6600;
+    // font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .item-content .fav-button {
+    position: absolute;
+  }
+  
+  .fab-title {
+    position: absolute;
+    margin-top: -8px;
+    left: -200px;
+    width: 200px;
+    padding: 5px;
+    text-align: right;
+    font-weight: bolder;
+  
+    span {
+        color: #fff;
+        box-shadow: 2px 2px 5px #ffffff;
+        background-color: var(--ion-color-primary, #ff4848) !important;;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+  }
+  

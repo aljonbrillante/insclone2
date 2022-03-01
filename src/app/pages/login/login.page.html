@@ -1,0 +1,47 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      English (UK)
+    </ion-title>
+  </ion-toolbar>
+  <ion-row>
+    <ion-col class="instalogo">
+      <img alt="logo" height="60" src="../assets/images/instalogo.png">
+    </ion-col>
+  </ion-row>
+</ion-header>
+<ion-content>
+
+
+  <form (ngSubmit)="login()" [formGroup]="credentials">
+    <ion-grid class="ion-justify-content-center" style="padding: 145px 20% 0 20%;">
+
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-input style="font-size: 10px;" name="email" type="email"
+          placeholder="Phone number, username or email address" formControlName="email"></ion-input>
+      </ion-item>
+      <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
+        <span *ngIf="email.errors?.required">Email is required</span>
+        <span *ngIf="email.errors?.email">Email is invalid</span>
+      </div>
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-input style="font-size: 10px;" name="password" type="password" placeholder="Password"
+          formControlName="password"></ion-input>
+      </ion-item>
+
+      <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+        <span *ngIf="password.errors?.required">Password is required</span>
+        <span *ngIf="password.errors?.minlength">Password needs to be 6 characters</span>
+      </div>
+
+
+      <div class="button-area">
+        <ion-button style="--background: #99D9EA;" type="submit" expand="block" class="buttons"><span
+            class="ion-text-left">Log
+            In</span></ion-button>
+      </div>
+
+
+    </ion-grid>
+  </form>
+</ion-content>

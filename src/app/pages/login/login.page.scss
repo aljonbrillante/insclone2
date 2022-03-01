@@ -1,0 +1,54 @@
+.errors {
+    font-size: small;
+    color: rgb(255, 70, 70);
+    background: #fff;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.text-header {
+    margin-top: 100px;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+ion-input {
+    border: rgb(26, 26, 26) solid 0.5px;
+    --padding-start: 10px !important;
+    width: 100%;
+}
+
+.buttons {
+    margin-top: 10px;
+    --border-radius: 0;
+}
+
+ion-item {
+    --ion-safe-area-right: 0;
+    margin-bottom: 0px !important;
+}
+
+.button-area {
+    margin-top: 64px;
+}
+
+ion-header {
+    ion-toolbar {
+        height: 100px;
+        padding-left: 15px;
+        padding-top: 15px;
+        border: 0;
+    }
+}
+
+.instalogo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    // top: 50%;
+    height: 53px;
+    width: 43%;
+}

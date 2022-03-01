@@ -1,0 +1,20 @@
+<ion-header style="background-color: white;" class="ion-padding ion-no-border">
+  <ion-list>
+    <ion-card *ngFor="let item of datas; let i = index;" class="vehicle-card">
+      <ion-grid>
+        <ion-row class="vehicle-container">
+          <ion-col>
+            <ion-row style="height: 70%;">
+              <ion-col>
+                <ion-label>{{item.email}}</ion-label>
+              </ion-col>
+              <ion-col>
+                <ion-img src="item.picture"></ion-img>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </ion-list>
+</ion-header>
